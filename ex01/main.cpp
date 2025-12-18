@@ -21,4 +21,5 @@ int main()
     for (int i = 0; i < N; i++)
         zom[i].announce();
     delete [] zom;
+    return 0;
 }

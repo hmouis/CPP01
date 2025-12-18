@@ -15,21 +15,21 @@
 int main()
 {
     Zombie *zom;
-    randomChump("random zombie0");
-    randomChump("random zombie1");
-    randomChump("random zombie2");
-    randomChump("random zombie3");
-    zom = newZombie("new zombie1");
+    randomChump("random zombie 1");
+    randomChump("random zombie 2");
+    randomChump("random zombie 3");
+    randomChump("random zombie 4");
+    zom = newZombie("new zombie 1");
     zom->announce();
     delete zom;
-    zom = newZombie("new zombie2");
+    zom = newZombie("new zombie 2");
     zom->announce();
     delete zom;
-    zom = newZombie("new zombie3");
+    zom = newZombie("new zombie 3");
     zom->announce();
     delete zom;
-    zom = newZombie("new zombie4");
+    zom = newZombie("new zombie 4");
     zom->announce();
     delete zom;
-    
+    return 0;
 }

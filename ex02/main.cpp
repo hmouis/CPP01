@@ -28,5 +28,6 @@ int main()
     std::cout << "The value of the string variable: " << str << "\n";
     std::cout << "The value pointed to by stringPTR: " << *ptr << "\n";
     std::cout << "The value pointed to by stringREF: " << ref << "\n";
+    return 0;
     
 }
