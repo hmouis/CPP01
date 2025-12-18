@@ -1,0 +1,19 @@
+Name= Zombie
+
+CC= c++
+CFLAGS= -Wall -Wextra -Werror -std=c++98
+src= Zombie.cpp main.cpp zombieHorde.cpp
+obj= $(src:.cpp=.o)
+ 
+all: $(Name)
+
+$(Name): $(obj)
+	$(CC) $(CFLAGS) -o $@ $?
+
+clean:
+	rm -f $(obj)
+
+fclean:clean
+	rm -f $(Name)
+
+re: fclean all

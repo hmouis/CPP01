@@ -1,0 +1,22 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   zombieHorde.cpp                                    :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: hmouis <hmouis@student.42.fr>              +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/10/05 14:33:30 by hmouis            #+#    #+#             */
+/*   Updated: 2025/11/25 21:29:58 by hmouis           ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+#include "Zombie.hpp"
+
+Zombie* zombieHorde( int N, std::string name )
+{
+    Zombie *zombie_arr = new Zombie[N];
+    
+    for (int i = 0; i < N; i++)
+        zombie_arr[i].setName(name);
+    return (zombie_arr);
+}
