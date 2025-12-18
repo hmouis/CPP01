@@ -10,6 +10,9 @@ all: $(Name)
 $(Name): $(src)
 	$(CC) $(CFLAGS) -o $@ $?
 
+%.o: %.cpp
+	$(CC) $(CFLAGS) -c $< -o $@
+
 clean:
 	rm -f $(obj)
 
