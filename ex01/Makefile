@@ -8,7 +8,7 @@ obj= $(src:.cpp=.o)
 all: $(Name)
 
 $(Name): $(obj)
-	$(CC) $(CFLAGS) -o $@ $?
+	$(CC) $(CFLAGS) -o $@ $^
 
 %.o: %.cpp
 	$(CC) $(CFLAGS) -c $< -o $@

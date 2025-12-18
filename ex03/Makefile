@@ -4,16 +4,20 @@ CC= c++
 CFLAGS= -Wall -Wextra -Werror -std=c++98
 
 src= main.cpp Weapon.cpp HumanA.cpp HumanB.cpp
+obj= $(src:.cpp=.o)
 
 all: $(Name)
 
-$(Name): $(src)
-	$(CC) $(CFLAGS) -o $@ $?
+$(Name): $(obj)
+	$(CC) $(CFLAGS) -o $@ $^
 
 %.o: %.cpp
 	$(CC) $(CFLAGS) -c $< -o $@
 
-fclean: 
+clean:
+	rm -f $(obj)
+
+fclean:clean
 	rm -f $(Name)
 
 re: fclean all
