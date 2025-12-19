@@ -24,7 +24,6 @@ class Harl
         void error( void );
     
     public:
-        int a;
         void complain( std::string level );
 };
 
